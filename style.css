@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contato{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    display: none;
+}
+#contato:target{
+    display: block;
+}
+#contato:target ~ .box{
+    top:150px;
+     transition: width 10s, height 10s, transform 10s;
+    -webkit-animation-delay: 10s;
+    transition-delay: 10s;
+}
+.box{
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top: 25px;
+}
+.destaqueimg{
+    width: 100%;
+    
+}
+.contatoimg{
+    width: 100%;
+    position: absolute;
+}
+#close{
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    background-color: #A52A2A;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+}
+#close:hover{
+    opacity: .6;
+}
